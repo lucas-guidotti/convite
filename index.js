@@ -26,7 +26,29 @@
   });*/
 
   document.getElementById('confirmar').addEventListener('click', function() {
-    window.location.href = 'evento.php';
+    var tipoDate = document.getElementById('tipoDate').value;
+    
+    // Envia o tipo de date via POST para o arquivo PHP
+    fetch('evento.php', {
+      method: 'POST',
+      body: 'tipoDate=' + tipoDate,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    }).then(response => {
+      // Verifica se a resposta foi bem sucedida
+      if(response.ok) {
+        // Redireciona para o arquivo PHP
+        window.location.href = 'evento.php';
+      } else {
+        // Exibe uma mensagem de erro
+        alert('Erro ao criar o evento. Por favor, tente novamente.');
+      }
+    }).catch(error => {
+      console.error('Erro:', error);
+      // Exibe uma mensagem de erro
+      alert('Erro ao criar o evento. Por favor, tente novamente.');
+    });
   });
   
   
