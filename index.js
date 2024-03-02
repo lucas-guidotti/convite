@@ -1,4 +1,4 @@
-document.getElementById('confirmar').addEventListener('click', function() {
+/*document.getElementById('confirmar').addEventListener('click', function() {
     var tipoDate = document.getElementById('tipoDate').value;
   
     // Definir a data e hora desejadas (ano, mês, dia, hora, minutos)
@@ -18,4 +18,10 @@ document.getElementById('confirmar').addEventListener('click', function() {
   
     // Redirecionar para o link do calendário
     window.location.href = linkCalendario;
+  });*/
+
+  document.getElementById('confirmar').addEventListener('click', function() {
+    var tipoDate = document.getElementById('tipoDate').value;
+    window.location.href='C:\Users\lucas\Desktop\convite\evento.ics';
   });
+  
