@@ -26,7 +26,7 @@
   });*/
 
   document.getElementById('confirmar').addEventListener('click', function() {
-    window.location.href = 'criar_evento.php';
+    window.location.href = 'evento.php';
   });
   
   
