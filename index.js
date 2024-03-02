@@ -22,6 +22,6 @@
 
   document.getElementById('confirmar').addEventListener('click', function() {
     var tipoDate = document.getElementById('tipoDate').value;
-    window.location.href='C:\Users\lucas\Desktop\convite\evento.ics';
+    window.location.href='https://raw.githubusercontent.com/lucas-guidotti/convite/main/evento.ics';
   });
   
