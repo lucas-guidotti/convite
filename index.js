@@ -20,8 +20,13 @@
     window.location.href = linkCalendario;
   });*/
 
-  document.getElementById('confirmar').addEventListener('click', function() {
+  /*document.getElementById('confirmar').addEventListener('click', function() {
     var tipoDate = document.getElementById('tipoDate').value;
     window.location.href='https://raw.githubusercontent.com/lucas-guidotti/convite/main/evento.ics';
+  });*/
+
+  document.getElementById('confirmar').addEventListener('click', function() {
+    window.location.href = 'criar_evento.php';
   });
+  
   
