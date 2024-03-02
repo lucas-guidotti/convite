@@ -29,7 +29,7 @@
     var tipoDate = document.getElementById('tipoDate').value;
     
     // Envia o tipo de date via POST para o arquivo PHP
-    fetch('evento.php', {
+    fetch('https://github.com/lucas-guidotti/convite/blob/main/evento.php', {
       method: 'POST',
       body: 'tipoDate=' + tipoDate,
       headers: {
@@ -39,7 +39,7 @@
       // Verifica se a resposta foi bem sucedida
       if(response.ok) {
         // Redireciona para o arquivo PHP
-        window.location.href = 'evento.php';
+        window.location.href = 'https://github.com/lucas-guidotti/convite/blob/main/evento.php';
       } else {
         // Exibe uma mensagem de erro
         alert('Erro ao criar o evento. Por favor, tente novamente.');
